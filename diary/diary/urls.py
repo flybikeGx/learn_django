@@ -19,6 +19,7 @@ from web import views as web_views
 
 urlpatterns = [
     url(r'^admin/',admin.site.urls),
-    url(r'^$', web_views.write),
+    url(r'^write/', web_views.write),
     url(r'^new/', web_views.new),
+    url(r'^$', web_views.home)
 ]

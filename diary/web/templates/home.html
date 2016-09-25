@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>welcome</title>
+</head>
+<body>
+	{% for al in ArticleList  %}
+		<a href="/ar/{{ al }}"> {{ al }}</a> <br>
+	{% endfor %}
+	<a href="/write/">write</a>
+</body>
+</html>
